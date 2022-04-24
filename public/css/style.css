@@ -74,8 +74,44 @@ header .lieu p {
   box-shadow: 4px 4px 9px 2px #adadad;
 }
 #etapes .fonctionnement ul li:hover {
-  background-color: #9356DC;
-  opacity: 0.2;
+  background-color: rgb(247, 203, 247);
+}
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+#restaurants h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 48px;
+}
+#restaurants a {
+  border-radius: 40px;
+  box-shadow: 5px 5px 7px 1px #DEDEDE;
+  height: 320px;
+  width: 33%;
+}
+#restaurants a img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  height: 70%;
+}
+#restaurants a h4 {
+  font-size: 20px;
+  margin: 10px 0 0 20px;
+}
+#restaurants a p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+#restaurants nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
 }
 
 .button {
@@ -103,6 +139,8 @@ header .lieu p {
   padding: 0;
   font-family: "Roboto", sans-serif;
   list-style-type: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 body {

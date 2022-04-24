@@ -1,0 +1,39 @@
+#restaurants {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 48px;
+      }
+
+    & a {
+        border-radius: 40px;
+        box-shadow: 5px 5px 7px 1px #DEDEDE;
+        height: 320px;
+        width: 33%;
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 40px 40px 0 0;
+            height: 70%;
+        }
+        & h4 {
+            font-size: 20px;
+            margin: 10px 0 0 20px;
+        }
+
+        & p {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+    }
+    & nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+}
