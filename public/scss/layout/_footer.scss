@@ -1,0 +1,18 @@
+footer {
+  background-color: rgb(55, 59, 59);
+  color: azure;
+  padding: 10px;
+  margin-top: 8%;
+
+  & h5 {
+    font-size: 20px;
+    font-family: "Shrikhand", cursive;
+    font-weight: 100;
+    margin-left: 10px;
+  }
+  & ul {
+    & li {
+      margin: 10px;
+    }
+  }
+}
