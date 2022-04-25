@@ -18,3 +18,13 @@
       background-image: linear-gradient(to bottom, #9356dc, #ff79da);
       text-decoration: none;
     }
+
+    .command {
+      background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+      color: #ffffff;
+      font-size: 15px;
+      padding: 15px;
+    }

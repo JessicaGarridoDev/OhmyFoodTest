@@ -18,12 +18,25 @@
     box-shadow: 5px 5px 7px 1px #dedede;
     height: 320px;
     width: 33%;
+    position: relative;
 
     & img {
       object-fit: cover;
       width: 100%;
       border-radius: 40px 40px 0 0;
       height: 70%;
+      
+    }
+    & span {
+      background-color: $color-tertiary;
+      color: rgb(15, 131, 15);
+      box-shadow: 3px 3px 10px 0 #b9b7b7;
+      position: absolute;
+      padding: 10px;
+      top: 10px;
+      right: 20px;
+      border-radius: 5px;
+      font-weight: bold;
     }
     & h4 {
       font-size: 20px;
