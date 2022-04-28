@@ -24,3 +24,24 @@ footer {
     }
   }
 }
+
+
+
+// VERSION MOBILE 
+
+@media screen and (min-width: 0) and (max-width: 320px) {
+  footer {
+    margin-top: 17%;
+  
+    & .omfFont {
+      font-size: 20px;
+      font-family: "Shrikhand", cursive;
+      font-weight: 100;
+      margin-right: auto;
+    }
+    & ul {
+      flex-direction: column;
+      margin-right: auto;
+    }
+  }
+}
