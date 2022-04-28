@@ -29,7 +29,9 @@ header {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
     header {
-        
+        .homeTitles {
+            color: red;
+        }
         img {
             width: 150px;
             margin: 15px;

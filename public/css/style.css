@@ -32,6 +32,9 @@ header .lieu p {
 }
 
 @media screen and (min-width: 0) and (max-width: 320px) {
+  header .homeTitles {
+    color: red;
+  }
   header img {
     width: 150px;
     margin: 15px;
@@ -107,6 +110,39 @@ header .lieu p {
   color: #9356DC;
 }
 
+@media screen and (min-width: 0) and (max-width: 320px) {
+  #etapes .reservation {
+    width: 74%;
+  }
+  #etapes .reservation h1 {
+    font-size: 24px;
+  }
+  #etapes .reservation p {
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+  }
+  #etapes .reservation .button {
+    font-size: 14px;
+    width: auto;
+  }
+  #etapes .fonctionnement .homeTitles {
+    font-size: 19px;
+    margin-right: auto auto 50px 24px;
+    margin: auto auto 19px 24px;
+  }
+  #etapes .fonctionnement ul li {
+    font-size: 15px;
+    margin: 11px;
+    padding: 25px;
+    box-shadow: 3px 3px 9px 0px #adadad;
+    width: 265px;
+  }
+  #etapes .fonctionnement ul li:hover {
+    background-color: rgb(237, 223, 240);
+    color: #9356DC;
+  }
+}
 #restaurants {
   display: flex;
   align-items: center;
@@ -209,7 +245,7 @@ main .menu h1 {
   font-size: 25px;
   margin: auto auto 35px 20px;
 }
-main h2 {
+main .titreMenus {
   font-weight: 300;
   font-size: 15px;
   border-bottom: 3px solid #85dde9;
