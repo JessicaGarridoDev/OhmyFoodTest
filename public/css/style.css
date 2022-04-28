@@ -1,5 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.button {
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 6px 8px #d1d1d1;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px;
+}
+
+.button:hover {
+  background: #9356dc;
+  background-image: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -moz-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -ms-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -o-linear-gradient(top, #9356dc, #ff79da);
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  text-decoration: none;
+}
+
+.command {
+  margin-left: 45%;
+  background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 15px;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -53,150 +97,6 @@ header .lieu p {
     font-weight: bold;
   }
 }
-#etapes {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1em;
-}
-#etapes .reservation {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 30px;
-  gap: 1em;
-}
-#etapes .reservation h1 {
-  font-size: 25px;
-  font-weight: bold;
-  text-align: center;
-}
-#etapes .reservation p {
-  font-size: 18px;
-  text-align: center;
-}
-#etapes .reservation .button {
-  font-size: 18px;
-  width: auto;
-}
-#etapes .fonctionnement {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-#etapes .fonctionnement ul {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-#etapes .fonctionnement ul i {
-  margin-right: 15px;
-}
-#etapes .fonctionnement ul li {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 20px;
-  padding: 25px;
-  background-color: #e5e5e5;
-  border-radius: 18px;
-  box-shadow: 4px 4px 9px 2px #adadad;
-  width: 280px;
-}
-#etapes .fonctionnement ul li:hover {
-  background-color: rgb(237, 223, 240);
-  color: #9356DC;
-}
-
-@media screen and (min-width: 0) and (max-width: 320px) {
-  #etapes .reservation {
-    width: 74%;
-  }
-  #etapes .reservation h1 {
-    font-size: 24px;
-  }
-  #etapes .reservation p {
-    font-size: 15px;
-    width: 300px;
-    text-align: center;
-  }
-  #etapes .reservation .button {
-    font-size: 14px;
-    width: auto;
-  }
-  #etapes .fonctionnement .homeTitles {
-    font-size: 19px;
-    margin-right: auto auto 50px 24px;
-    margin: auto auto 19px 24px;
-  }
-  #etapes .fonctionnement ul li {
-    font-size: 15px;
-    margin: 11px;
-    padding: 25px;
-    box-shadow: 3px 3px 9px 0px #adadad;
-    width: 265px;
-  }
-  #etapes .fonctionnement ul li:hover {
-    background-color: rgb(237, 223, 240);
-    color: #9356DC;
-  }
-}
-#restaurants {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px;
-}
-#restaurants h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 40px;
-}
-#restaurants nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2em;
-}
-#restaurants a {
-  border-radius: 40px;
-  box-shadow: 5px 5px 7px 1px #dedede;
-  height: 320px;
-  width: 33%;
-  position: relative;
-}
-#restaurants a img {
-  object-fit: cover;
-  width: 100%;
-  border-radius: 40px 40px 0 0;
-  height: 70%;
-}
-#restaurants a span {
-  background-color: #99E2D0;
-  color: rgb(15, 131, 15);
-  box-shadow: 3px 3px 10px 0 #b9b7b7;
-  position: absolute;
-  padding: 10px;
-  top: 10px;
-  right: 20px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-#restaurants a h2 {
-  font-size: 20px;
-  margin: 10px 0 0 20px;
-}
-#restaurants a p {
-  font-size: 20px;
-  margin-left: 20px;
-}
-#restaurants a:hover {
-  opacity: 0.4;
-}
-
 footer {
   display: flex;
   align-items: center;
@@ -295,120 +195,190 @@ main .menuList .menuDetail .okbox .fa-circle-check {
   color: white;
 }
 
+#etapes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+#etapes .reservation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px;
+  gap: 1em;
+}
+#etapes .reservation h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+#etapes .reservation p {
+  font-size: 18px;
+  text-align: center;
+}
+#etapes .reservation .button {
+  font-size: 18px;
+  width: auto;
+}
+#etapes .fonctionnement {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#etapes .fonctionnement ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#etapes .fonctionnement ul i {
+  margin-right: 15px;
+}
+#etapes .fonctionnement ul li {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 20px;
+  padding: 25px;
+  background-color: #e5e5e5;
+  border-radius: 18px;
+  box-shadow: 4px 4px 9px 2px #adadad;
+  width: 280px;
+}
+#etapes .fonctionnement ul li:hover {
+  background-color: rgb(237, 223, 240);
+  color: #9356DC;
+}
+
+#restaurants {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+#restaurants h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 40px;
+}
+#restaurants nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+#restaurants a {
+  border-radius: 16px;
+  box-shadow: 3px 3px 9px 0px #adadad;
+  height: 320px;
+  width: 33%;
+  position: relative;
+}
+#restaurants a img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: 70%;
+}
+#restaurants a span {
+  background-color: #99E2D0;
+  color: rgb(15, 131, 15);
+  box-shadow: 3px 3px 10px 0 #b9b7b7;
+  position: absolute;
+  padding: 10px;
+  top: 10px;
+  right: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#restaurants a h2 {
+  font-size: 20px;
+  margin: 10px 0 0 20px;
+}
+#restaurants a p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+#restaurants a:hover {
+  opacity: 0.4;
+}
+
 @media screen and (min-width: 0) and (max-width: 320px) {
-  main img {
-    width: 100%;
-    height: 45%;
-    object-fit: cover;
+  #etapes .reservation {
+    width: 74%;
   }
-  main .menu {
-    background-color: #f2f2f2;
-    padding-top: 30px;
-    border-radius: 20px 20px 0 0;
-    margin-top: -16px;
+  #etapes .reservation h1 {
+    font-size: 24px;
+  }
+  #etapes .reservation p {
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+  }
+  #etapes .reservation .button {
+    font-size: 14px;
+    width: auto;
+  }
+  #etapes .fonctionnement .homeTitles {
+    font-size: 19px;
+    margin: auto auto 19px 24px;
+  }
+  #etapes .fonctionnement ul li {
+    font-size: 15px;
+    margin: 11px;
+    padding: 25px;
+    box-shadow: 3px 3px 9px 0px #adadad;
+    width: 265px;
+  }
+  #etapes .fonctionnement ul li:hover {
+    background-color: rgb(237, 223, 240);
+    color: #9356DC;
+  }
+
+  #restaurants {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #e5e5e5;
+    margin: 0;
+  }
+  #restaurants .homeTitles {
+    font-size: 19px;
+    margin: 20px auto 19px 24px;
+  }
+  #restaurants nav {
+    gap: 2em;
+  }
+  #restaurants a {
+    border-radius: 16px;
+    height: 210px;
+    width: 90%;
     position: relative;
   }
-  main .menu h1 {
-    text-align: center;
-    font-family: "Shrikhand", cursive;
-    font-weight: 100;
-    font-size: 25px;
-    margin: auto auto 35px 20px;
+  #restaurants a img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    height: 70%;
   }
-  main h3 {
-    font-weight: 300;
+  #restaurants a span {
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  #restaurants a h2 {
     font-size: 15px;
-    border-bottom: 3px solid #85dde9;
-    width: 40px;
-    margin: 20px auto;
+    text-align: left;
   }
-  main .menuList {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  main .menuList .menuDetail {
-    display: flex;
-    align-items: center;
-    background-color: rgb(252, 252, 252);
-    margin: 20px 15px;
-    border-radius: 18px;
-    box-shadow: 0 0 16px rgba(216, 138, 138, 0.1803921569);
-    height: 80px;
-    width: 340px;
-    padding: 10px;
-  }
-  main .menuList .menuDetail h4 {
-    font-size: 16px;
-  }
-  main .menuList .menuDetail p {
+  #restaurants a p {
     font-size: 15px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    width: 177px;
+    text-align: left;
   }
-  main .menuList .menuDetail .price {
-    font-size: 14px;
-    font-weight: bold;
-    height: 20px;
-  }
-  main .menuList .menuDetail .okbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #99e2d0;
-    height: 81px;
-    border-radius: 0 18px 18px 0;
-    margin-right: 0;
-  }
-  main .menuList .menuDetail .okbox .fa-circle-check {
-    color: white;
-  }
-}
-.button {
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
-  border-radius: 40px;
-  border: none;
-  box-shadow: 0px 6px 8px #d1d1d1;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 15px;
-}
-
-.button:hover {
-  background: #9356dc;
-  background-image: -webkit-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -moz-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -ms-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -o-linear-gradient(top, #9356dc, #ff79da);
-  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
-  text-decoration: none;
-}
-
-.command {
-  margin-left: 45%;
-  background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 15px;
-  padding: 15px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  list-style-type: none;
-  text-decoration: none;
-  color: inherit;
-}
-
-body {
-  background-color: #f2f2f2;
 }
 
 /*# sourceMappingURL=style.css.map */
