@@ -1,37 +1,30 @@
 #etapes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flexbox;
   gap: 1em;
 
   .reservation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flexbox;
     margin: 30px;
     gap: 1em;
 
     & h1 {
       font-size: 25px;
       font-weight: bold;
+      text-align: center;
     }
     & p {
       font-size: 18px;
+      text-align: center;
     }
 
     .button {
       font-size: 18px;
-      display: flex;
-      justify-content: center;
       width: auto;
     }
   }
 
   .fonctionnement {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    @include flexbox;
 
     ul {
       display: flex;
@@ -47,12 +40,14 @@
         padding: 25px;
         background-color: #e5e5e5;
         border-radius: 18px;
-        box-shadow: 4px 4px 9px 2px #adadad;  
-      }
+        box-shadow: 4px 4px 9px 2px #adadad;
+        width: 280px;
+      }    
       & li:hover {
-            background-color: rgb(247, 203, 247);
+            background-color: rgb(237, 223, 240);
+            color: $color-secondary;
         }
-
+      
     }
   }
 }

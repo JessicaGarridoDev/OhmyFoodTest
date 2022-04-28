@@ -1,11 +1,10 @@
 #restaurants {
-  display: flex;
-  flex-direction: column;
+  @include flexbox;
   margin: 20px;
   h2 {
     text-align: center;
     font-size: 30px;
-    margin: 48px;
+    margin: 40px;
   }
   & nav {
     display: flex;
@@ -24,8 +23,7 @@
       object-fit: cover;
       width: 100%;
       border-radius: 40px 40px 0 0;
-      height: 70%;
-      
+      height: 70%; 
     }
     & span {
       background-color: $color-tertiary;
@@ -38,7 +36,7 @@
       border-radius: 5px;
       font-weight: bold;
     }
-    & h4 {
+    & h2 {
       font-size: 20px;
       margin: 10px 0 0 20px;
     }
