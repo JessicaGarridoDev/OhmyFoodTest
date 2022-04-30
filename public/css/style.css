@@ -51,6 +51,14 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes fondu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .button {
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   border-radius: 40px;
@@ -92,11 +100,15 @@ body {
   -webkit-background-clip: text;
 }
 
-.fa-heart {
+p + .fa-heart {
   position: absolute;
   font-size: 50px;
   right: 8%;
   top: 79%;
+}
+
+h1 + .fa-regular {
+  margin-left: 20px;
 }
 
 header {
@@ -226,10 +238,7 @@ main .menuList {
   display: flex;
   justify-content: center;
 }
-main .menuList .fadeEffect {
-  animation: fadeMenu 0.6s;
-}
-main .menuList .menuDetail {
+main .menuDetail {
   display: flex;
   align-items: center;
   background-color: rgb(252, 252, 252);
@@ -239,36 +248,22 @@ main .menuList .menuDetail {
   height: 100px;
   width: 400px;
   padding: 5px;
-  animation-delay: 0.6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
+  animation: fondu 1s;
 }
-main .menuList h2 {
+main h2 {
   font-size: 16px;
 }
-main .menuList p {
+main p {
   font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 177px;
 }
-main .menuList .price {
+main .price {
   font-size: 14px;
   font-weight: bold;
   height: 20px;
-}
-main .menuList .okbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #99e2d0;
-  height: 81px;
-  border-radius: 0 18px 18px 0;
-  margin-right: 0;
-}
-main .menuList .okbox .fa-circle-check {
-  color: white;
 }
 
 #etapes {

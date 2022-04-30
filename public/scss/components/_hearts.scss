@@ -10,9 +10,13 @@
 .fa-regular:hover {
    
 }
-.fa-heart {
+p + .fa-heart {
   position: absolute;
   font-size: 50px;
   right: 8%;
   top: 79%;
+}
+
+h1 + .fa-regular {
+  margin-left: 20px;
 }

@@ -30,8 +30,6 @@ main {
   .menuList {
     display: flex;
     justify-content: center;
-    .fadeEffect {
-    animation: fadeMenu .6s;
     }
     .menuDetail {
       display: flex;
@@ -43,16 +41,11 @@ main {
       height: 100px;
       width: 400px;
       padding: 5px;
-      animation-delay: .6s;  
-      animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-      animation-fill-mode: both;
-      
-    }
-
+      animation: fondu 1s;
+      }
       h2 {
         font-size: 16px;
       }
-
       p {
         font-size: 15px;
         white-space: nowrap;
@@ -60,27 +53,13 @@ main {
         overflow: hidden;
         width: 177px;
       }
-
       .price {
         font-size: 14px;
         font-weight: bold;
         height: 20px;
       }
-
-      .okbox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #99e2d0;
-        height: 81px;
-        border-radius: 0 18px 18px 0;
-        margin-right: 0;
-        & .fa-circle-check {
-          color: white;
-        }
-      }
-    }
-  }
+  }    
+  
 
 
 // VERSION MOBILE
