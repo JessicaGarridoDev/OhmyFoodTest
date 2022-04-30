@@ -196,7 +196,7 @@ main .menu h1 {
   font-family: "Shrikhand", cursive;
   font-weight: 100;
   font-size: 25px;
-  margin: auto auto 35px 20px;
+  margin: auto 15px 35px 20px;
 }
 main .titreMenus {
   font-weight: 300;
@@ -380,6 +380,12 @@ main .menuList .okbox .fa-circle-check {
 #restaurants a p {
   font-size: 20px;
   margin-left: 20px;
+}
+#restaurants a .fa-heart {
+  position: absolute;
+  font-size: 25px;
+  right: 8%;
+  top: 79%;
 }
 #restaurants a:hover {
   opacity: 0.4;
