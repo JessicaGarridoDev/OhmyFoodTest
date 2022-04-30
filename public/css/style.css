@@ -15,6 +15,42 @@ body {
   margin: 0;
 }
 
+.loader {
+  display: grid;
+  place-items: center;
+  background-color: rgb(231, 237, 243);
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: dissapear 2s forwards;
+  animation-delay: 3s;
+}
+.loader i {
+  color: black;
+  animation: spin 2s infinite;
+}
+
+@keyframes fadeMenu {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes dissapear {
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .button {
   background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   border-radius: 40px;
@@ -130,7 +166,7 @@ footer ul i {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   footer {
-    margin-top: 17%;
+    margin-top: 0;
   }
   footer .omfFont {
     font-size: 20px;
@@ -145,7 +181,7 @@ footer ul i {
 }
 main img {
   width: 100%;
-  height: 45%;
+  height: 400px;
   object-fit: cover;
 }
 main .menu {
@@ -164,7 +200,7 @@ main .menu h1 {
 }
 main .titreMenus {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
   border-bottom: 3px solid #85dde9;
   width: 40px;
   margin: 20px auto;
@@ -172,6 +208,9 @@ main .titreMenus {
 main .menuList {
   display: flex;
   justify-content: center;
+}
+main .menuList .fadeEffect {
+  animation: fadeMenu 0.6s;
 }
 main .menuList .menuDetail {
   display: flex;
@@ -183,23 +222,26 @@ main .menuList .menuDetail {
   height: 100px;
   width: 400px;
   padding: 5px;
+  animation-delay: 0.6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  animation-fill-mode: both;
 }
-main .menuList .menuDetail h2 {
+main .menuList h2 {
   font-size: 16px;
 }
-main .menuList .menuDetail p {
+main .menuList p {
   font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   width: 177px;
 }
-main .menuList .menuDetail .price {
+main .menuList .price {
   font-size: 14px;
   font-weight: bold;
   height: 20px;
 }
-main .menuList .menuDetail .okbox {
+main .menuList .okbox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,7 +250,7 @@ main .menuList .menuDetail .okbox {
   border-radius: 0 18px 18px 0;
   margin-right: 0;
 }
-main .menuList .menuDetail .okbox .fa-circle-check {
+main .menuList .okbox .fa-circle-check {
   color: white;
 }
 
@@ -224,7 +266,10 @@ main .menuList .menuDetail .okbox .fa-circle-check {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  margin: 30px;
+  background-color: hsl(0deg, 3%, 92%);
+  width: 100%;
+  margin: 0;
+  padding: 40px;
   gap: 1em;
 }
 #etapes .reservation h1 {
@@ -245,11 +290,13 @@ main .menuList .menuDetail .okbox .fa-circle-check {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
 }
 #etapes .fonctionnement ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  counter-reset: compteur;
 }
 #etapes .fonctionnement ul i {
   margin-right: 15px;
@@ -267,6 +314,20 @@ main .menuList .menuDetail .okbox .fa-circle-check {
 #etapes .fonctionnement ul li:hover {
   background-color: rgb(237, 223, 240);
   color: #9356DC;
+}
+#etapes .fonctionnement ul li::before {
+  counter-increment: compteur;
+  content: counter(compteur);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  margin-left: -33px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
 }
 
 #restaurants {
@@ -313,7 +374,8 @@ main .menuList .menuDetail .okbox .fa-circle-check {
 }
 #restaurants a h2 {
   font-size: 20px;
-  margin: 10px 0 0 20px;
+  text-align: left;
+  margin: 10px auto 0 20px;
 }
 #restaurants a p {
   font-size: 20px;
@@ -325,7 +387,9 @@ main .menuList .menuDetail .okbox .fa-circle-check {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   #etapes .reservation {
-    width: 74%;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
   }
   #etapes .reservation h1 {
     font-size: 24px;
@@ -342,6 +406,9 @@ main .menuList .menuDetail .okbox .fa-circle-check {
   #etapes .fonctionnement .homeTitles {
     font-size: 19px;
     margin: auto auto 19px 24px;
+  }
+  #etapes .fonctionnement ul {
+    padding-bottom: 35px;
   }
   #etapes .fonctionnement ul li {
     font-size: 15px;
@@ -362,6 +429,7 @@ main .menuList .menuDetail .okbox .fa-circle-check {
     justify-content: center;
     width: 100%;
     background-color: #e5e5e5;
+    padding: 20px 0 50px 0;
     margin: 0;
   }
   #restaurants .homeTitles {
@@ -369,7 +437,7 @@ main .menuList .menuDetail .okbox .fa-circle-check {
     margin: 20px auto 19px 24px;
   }
   #restaurants nav {
-    gap: 2em;
+    gap: 1em;
   }
   #restaurants a {
     border-radius: 16px;

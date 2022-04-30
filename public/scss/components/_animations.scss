@@ -1,0 +1,22 @@
+@keyframes fadeMenu{
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes dissapear {
+        100% {
+          opacity: 0;
+          z-index: -20;
+        }
+      } 
+      
+
+  @keyframes spin {
+      to {
+          transform: rotate(360deg);
+      }
+  }

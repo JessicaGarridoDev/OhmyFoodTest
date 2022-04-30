@@ -13,3 +13,20 @@ body {
     background-color: $color-body;
     margin: 0;
 }
+
+.loader {
+    display: grid;
+    place-items: center;
+    background-color: rgb(231, 237, 243);
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.8;
+    animation: dissapear 2s forwards;
+    animation-delay: 3s;
+    & i {
+        color: black;
+        animation: spin 2s infinite;
+    }
+}
