@@ -82,6 +82,23 @@ body {
   padding: 15px;
 }
 
+.fa-solid {
+  color: transparent;
+}
+
+.fa-solid:hover {
+  color: red;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 50px;
+  right: 8%;
+  top: 79%;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -381,16 +398,6 @@ main .menuList .okbox .fa-circle-check {
   font-size: 20px;
   margin-left: 20px;
 }
-#restaurants a .fa-heart {
-  position: absolute;
-  font-size: 25px;
-  right: 8%;
-  top: 79%;
-}
-#restaurants a:hover {
-  opacity: 0.4;
-}
-
 @media screen and (min-width: 0) and (max-width: 320px) {
   #etapes .reservation {
     width: 100%;

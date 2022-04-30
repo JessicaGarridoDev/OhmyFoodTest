@@ -53,18 +53,18 @@
         color: $color-secondary;
       }
       & li::before {
-          counter-increment: compteur;
-          content: counter(compteur);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #fff;
-          position: absolute;
-          margin-left: -33px;
-          background-color: $color-secondary;
-          border-radius: 50%;
-          height: 20px;
-          width: 20px;
+        counter-increment: compteur;
+        content: counter(compteur);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        margin-left: -33px;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
       }
     }
   }
@@ -118,15 +118,9 @@
       font-size: 20px;
       margin-left: 20px;
     }
-    & .fa-heart {
-      position: absolute;
-      font-size: 25px;
-      right: 8%;
-      top: 79%;
-    }
   }
   & a:hover {
-    opacity: 0.4;
+    // opacity: 0.4;
   }
 }
 
