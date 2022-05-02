@@ -203,7 +203,7 @@ footer {
   padding: 10px;
   margin-top: 8%;
 }
-footer h5 {
+footer .omfFont {
   font-size: 20px;
   font-family: "Shrikhand", cursive;
   font-weight: 100;
@@ -284,7 +284,7 @@ main .menuDetail {
 main h3 {
   font-size: 20px;
 }
-main p {
+main main p {
   font-size: 15px;
   white-space: nowrap;
   text-overflow: ellipsis;
