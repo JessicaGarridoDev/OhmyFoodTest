@@ -19,29 +19,28 @@ footer {
     & li:hover {
       color: $color-tertiary;
     }
-    & i {
+    & .footerIcons {
       margin-right: 10px;
     }
   }
 }
 
-
-
 // VERSION MOBILE 
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   footer {
-    margin-top: 0;
-  
-    & .omfFont {
+    & h5 {
       font-size: 20px;
       font-family: "Shrikhand", cursive;
       font-weight: 100;
-      margin-right: auto;
+      margin:10px auto 10px 10px;
     }
     & ul {
       flex-direction: column;
       margin-right: auto;
+    }
+    .footerIcons {
+      margin-right: 5px;
     }
   }
 }

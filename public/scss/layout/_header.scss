@@ -1,8 +1,12 @@
 header {
     @include flexbox;
+    
+    .headerRestaurants {
+       display: flex;
+       align-items: center;  
+    }
     & .fa-arrow-left-long {
-        color: red;
-        margin-right: auto;
+        margin-left: -57px;
     }
     img {
         width: 250px;
