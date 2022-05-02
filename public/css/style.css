@@ -51,12 +51,12 @@ body {
     transform: rotate(360deg);
   }
 }
-@keyframes fondu {
+@keyframes menufade {
   0% {
-    transform: scale(0);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
   }
 }
 @keyframes heart-bg {
@@ -215,9 +215,6 @@ footer ul {
 footer ul li {
   margin: 10px;
 }
-footer ul li:hover {
-  color: #99E2D0;
-}
 footer ul .footerIcons {
   margin-right: 10px;
 }
@@ -268,6 +265,18 @@ main .menuList {
   display: flex;
   justify-content: center;
 }
+main .delay1 {
+  animation: menufade 2s;
+  animation-delay: 1s;
+}
+main .delay2 {
+  animation: menufade 2s;
+  animation-delay: 1.3s;
+}
+main .delay3 {
+  animation: menufade 2s;
+  animation-delay: 1.6s;
+}
 main .menuDetail {
   display: flex;
   align-items: center;
@@ -279,7 +288,6 @@ main .menuDetail {
   height: 100px;
   width: 400px;
   padding: 5px;
-  animation: fondu 1s;
 }
 main h3 {
   font-size: 20px;

@@ -25,15 +25,17 @@
 
   // ARRIVEE EN FONDU DU MENU
 
-  @keyframes fondu {
+  @keyframes menufade {
     0% {
-      transform: scale(0);
+      opacity: 0;
     }
+  
     100% {
-      transform: scale(1);
+      opacity: 1;
     }
   }
 
+  // COULEUR DU COEUR QUI CHANGE AU HOVER
   @keyframes heart-bg {
     0% {
       background:-webkit-linear-gradient(13deg, rgba(255, 121, 217, 0) 0%, rgba(187, 98, 219, 0) 66%);
