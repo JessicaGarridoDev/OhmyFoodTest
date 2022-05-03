@@ -94,15 +94,23 @@ body {
   text-decoration: none;
 }
 
+.commandButton {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .command {
-  margin-left: 45%;
   background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
   border-radius: 40px;
   border: none;
   cursor: pointer;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 17px;
   padding: 15px;
+  width: 250px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 0) and (max-width: 320px) {
