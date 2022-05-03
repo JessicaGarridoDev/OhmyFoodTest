@@ -26,11 +26,11 @@ footer {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   footer {
-    & h5 {
+    & .omfFont {
       font-size: 20px;
       font-family: "Shrikhand", cursive;
-      font-weight: 100;
-      margin:10px auto 10px 10px;
+      margin: 0 auto 0 15px;
+      font-weight: normal;
     }
     & ul {
       flex-direction: column;

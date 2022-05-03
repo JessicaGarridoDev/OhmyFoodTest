@@ -15,40 +15,34 @@ body {
   margin: 0;
 }
 
-.loader {
-  display: grid;
-  place-items: center;
-  background-color: rgb(231, 237, 243);
-  height: 100vh;
-  position: fixed;
-  inset: 0;
-  z-index: 1;
-  opacity: 0.8;
-  animation: dissapear 2s forwards;
-  animation-delay: 3s;
-}
-.loader i {
-  color: black;
-  animation: spin 2s infinite;
+.loaderbg .loader {
+  border: 10px solid #99E2D0;
+  border-top: 10px solid #FF79DA;
+  border-bottom: 10px solid #9356DC;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: loader-spin 3s linear infinite;
 }
 
-@keyframes fadeMenu {
+@keyframes loader-spin {
   0% {
-    transform: scale(0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: scale(1);
+    transform: rotate(360deg);
   }
 }
 @keyframes dissapear {
   100% {
     opacity: 0;
     z-index: -20;
-  }
-}
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
   }
 }
 @keyframes menufade {

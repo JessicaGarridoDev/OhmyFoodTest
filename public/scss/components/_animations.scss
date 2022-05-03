@@ -1,27 +1,20 @@
 
 // PAGE DE CHARGEMENT
 
-@keyframes fadeMenu{
-    0% {
-      transform: scale(0)
+  @keyframes loader-spin {
+    0%  {
+      transform: rotate(0deg);
     }
     100% {
-      transform: scale(1);
+      transform: rotate(360deg);
     }
   }
-
   @keyframes dissapear {
-        100% {
-          opacity: 0;
-          z-index: -20;
-        }
-      } 
-      
- @keyframes spin {
-      to {
-          transform: rotate(360deg);
-      }
-    }  
+    100% {
+      opacity: 0;
+      z-index: -20;
+    }
+  } 
 
   // ARRIVEE EN FONDU DU MENU
 
