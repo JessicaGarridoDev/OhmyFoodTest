@@ -15,6 +15,9 @@ body {
   margin: 0;
 }
 
+.loaderbg {
+  background-color: #9356DC;
+}
 .loaderbg .loader {
   border: 10px solid #99E2D0;
   border-top: 10px solid #FF79DA;
@@ -72,6 +75,14 @@ body {
     color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes iconeSpin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
 .button {
@@ -203,7 +214,6 @@ footer {
   background-color: rgb(55, 59, 59);
   color: azure;
   padding: 10px;
-  margin-top: 8%;
 }
 footer .omfFont {
   font-size: 20px;
@@ -290,9 +300,11 @@ main .menuDetail {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1803921569);
   height: 100px;
   width: 400px;
+  overflow: hidden;
 }
 main h3 {
   font-size: 20px;
+  text-overflow: ellipsis;
 }
 main main p {
   font-size: 15px;
@@ -329,6 +341,13 @@ main .fa-check {
   border-radius: 18px;
   width: 30px;
   height: 30px;
+}
+main .menuDetail:hover .check-box {
+  transition: all 1s;
+  margin-right: 0;
+}
+main .menuDetail:hover .check-box .fa-check {
+  animation: iconeSpin 1s;
 }
 
 @media screen and (min-width: 0) and (max-width: 320px) {

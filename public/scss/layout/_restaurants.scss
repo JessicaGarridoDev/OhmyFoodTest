@@ -46,7 +46,7 @@ main {
     animation-delay: 0.6s;
   }
 
-    .menuDetail {
+  .menuDetail {
       display: flex;
       align-items: center;
       background-color: rgb(252, 252, 252);
@@ -56,11 +56,12 @@ main {
       box-shadow: 0 0 16px #0000002e;
       height: 100px;
       width: 400px;
-      // overflow: hidden;
+      overflow: hidden;
       }
       
       h3 {
         font-size: 20px;
+        text-overflow: ellipsis;
       }
       main p {
         font-size: 15px;
@@ -91,9 +92,18 @@ main {
             border-radius: 18px;
             width: 30px;
             height: 30px;
-
+            
           }
-  }    
+      & .menuDetail:hover .check-box{
+        transition: all 1s;
+            margin-right: 0;
+      & .fa-check {
+          animation: iconeSpin 1s;
+        }
+          }
+       
+      } 
+      
   
 
 

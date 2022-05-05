@@ -50,3 +50,14 @@
       -webkit-text-fill-color: transparent;
     }
   }
+
+  // ROTATION DE L'ICONE DANS LE CHECK BOX
+
+  @keyframes iconeSpin {
+    0% {
+      transform: rotate(-270deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
