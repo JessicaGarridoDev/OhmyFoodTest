@@ -10,9 +10,11 @@
     }
   }
   @keyframes dissapear {
+    0% {
+      transform: scale(1);
+    }
     100% {
-      opacity: 0;
-      z-index: -20;
+     visibility: hidden;
     }
   } 
 

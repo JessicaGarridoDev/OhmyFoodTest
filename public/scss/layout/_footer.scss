@@ -25,6 +25,7 @@ footer {
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   footer {
+    padding-top: 25px;
     & .omfFont {
       font-size: 20px;
       font-family: "Shrikhand", cursive;

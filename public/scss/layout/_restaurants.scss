@@ -125,19 +125,18 @@ main {
       position: relative;
   
       & h1 {
-        text-align: center;
+        text-align: start;
         font-family: "Shrikhand", cursive;
         font-weight: 100;
-        font-size: 25px;
-        margin: auto 15px 35px 20px;
+        font-size: 22px;
       }
     }
     & .titreMenus {
       font-weight: 300;
-      font-size: 20px;
+      font-size: 15px;
       border-bottom: 3px solid #85dde9;
       width: 40px;
-      margin: 20px;
+      margin: 25px auto 7px 15px;
     }
   
     .menuList {
@@ -149,14 +148,16 @@ main {
         height: 75px;
         }
         h3 {
-          font-size: 15px;
+          font-size: 14px;
           
         }
         p {
-          font-size: 14px;
+          font-size: 13px;
         }
         .price {
           font-size: 14px;
+          margin-right: 35px;
+          margin-bottom: -35px;
         }
 }
 }

@@ -8,17 +8,12 @@
   padding: 15px;
 }
 .button:hover {
-  background: #9356dc;
-  background-image: -webkit-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -moz-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -ms-linear-gradient(top, #9356dc, #ff79da);
-  background-image: -o-linear-gradient(top, #9356dc, #ff79da);
-  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
-  text-decoration: none;
+  @include btnhover;
 }
 
 .commandButton {
-  @include flexbox;  
+  @include flexbox; 
+  padding-bottom: 6%; 
 }
 .command {
   background: linear-gradient(to bottom, #ff79da 5%, #9356dc 100%);
@@ -31,11 +26,15 @@
   width: 250px;
   margin-top: 30px;
 }
+.command:hover {
+  @include btnhover;
+}
 
 
 @media screen and (min-width: 0) and (max-width: 320px) {
   .command {
-    width: 70%;
-    margin: 15%;
+    width: 56%;
+    margin: 12%;
+    font-size: 15px;
   }
 }

@@ -15,10 +15,17 @@ body {
   margin: 0;
 }
 
-.loaderbg {
-  background-color: #9356DC;
+.loader {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  animation: dissapear 2s forwards;
 }
-.loaderbg .loader {
+
+.loaderIcon {
   border: 10px solid #99E2D0;
   border-top: 10px solid #FF79DA;
   border-bottom: 10px solid #9356DC;
@@ -31,7 +38,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: loader-spin 3s linear infinite;
+  animation: loader-spin 2s linear;
 }
 
 @keyframes loader-spin {
@@ -43,9 +50,11 @@ body {
   }
 }
 @keyframes dissapear {
+  0% {
+    transform: scale(1);
+  }
   100% {
-    opacity: 0;
-    z-index: -20;
+    visibility: hidden;
   }
 }
 @keyframes menufade {
@@ -110,6 +119,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 6%;
 }
 
 .command {
@@ -124,15 +134,26 @@ body {
   margin-top: 30px;
 }
 
+.command:hover {
+  background: #9356dc;
+  background-image: -webkit-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -moz-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -ms-linear-gradient(top, #9356dc, #ff79da);
+  background-image: -o-linear-gradient(top, #9356dc, #ff79da);
+  background-image: linear-gradient(to bottom, #9356dc, #ff79da);
+  text-decoration: none;
+}
+
 @media screen and (min-width: 0) and (max-width: 320px) {
   .command {
-    width: 70%;
-    margin: 15%;
+    width: 56%;
+    margin: 12%;
+    font-size: 15px;
   }
 }
 .fa-heart {
   position: absolute;
-  font-size: 25px;
+  font-size: 24px;
   right: 8%;
   top: 79%;
 }
@@ -146,8 +167,8 @@ body {
 }
 
 .titleHeart {
-  right: 39%;
-  top: 12%;
+  position: inherit;
+  padding-left: 30px;
 }
 
 header {
@@ -232,6 +253,9 @@ footer ul .footerIcons {
 }
 
 @media screen and (min-width: 0) and (max-width: 320px) {
+  footer {
+    padding-top: 25px;
+  }
   footer .omfFont {
     font-size: 20px;
     font-family: "Shrikhand", cursive;
@@ -364,18 +388,17 @@ main .menuDetail:hover .check-box .fa-check {
     position: relative;
   }
   main .menu h1 {
-    text-align: center;
+    text-align: start;
     font-family: "Shrikhand", cursive;
     font-weight: 100;
-    font-size: 25px;
-    margin: auto 15px 35px 20px;
+    font-size: 22px;
   }
   main .titreMenus {
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     border-bottom: 3px solid #85dde9;
     width: 40px;
-    margin: 20px;
+    margin: 25px auto 7px 15px;
   }
   main .menuList {
     display: flex;
@@ -389,13 +412,15 @@ main .menuDetail:hover .check-box .fa-check {
     height: 75px;
   }
   main h3 {
-    font-size: 15px;
+    font-size: 14px;
   }
   main p {
-    font-size: 14px;
+    font-size: 13px;
   }
   main .price {
     font-size: 14px;
+    margin-right: 35px;
+    margin-bottom: -35px;
   }
 }
 #etapes {
