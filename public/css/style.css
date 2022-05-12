@@ -461,6 +461,7 @@ main .menuDetail:hover .check-box .fa-check {
   margin-right: 15px;
 }
 #etapes .fonctionnement ul li {
+  display: flex;
   font-weight: bold;
   font-size: 18px;
   margin: 20px;
@@ -473,6 +474,9 @@ main .menuDetail:hover .check-box .fa-check {
 #etapes .fonctionnement ul li:hover {
   background-color: rgb(237, 223, 240);
   color: #9356DC;
+}
+#etapes .fonctionnement ul p:hover {
+  color: black;
 }
 #etapes .fonctionnement ul li::before {
   counter-increment: compteur;
