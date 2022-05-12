@@ -311,16 +311,21 @@ main .menuDetail {
   width: 400px;
   overflow: hidden;
 }
-main h3 {
-  font-size: 20px;
+main .menuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  white-space: nowrap;
+}
+main .menuText h3 {
+  font-size: 15px;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
-main main p {
-  font-size: 15px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+main .menuText p {
   overflow: hidden;
-  width: 177px;
+  text-overflow: ellipsis;
 }
 main .price {
   font-size: 15px;
