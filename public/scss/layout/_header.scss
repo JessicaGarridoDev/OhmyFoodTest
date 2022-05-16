@@ -6,11 +6,11 @@ header {
        align-items: center;  
     }
     & .fa-arrow-left-long {
-        margin-left: -57px;
+        margin-left: -20px;
     }
     img {
         width: 250px;
-        margin: 20px;
+        margin: -20px;
     }
 
     .lieu {
@@ -31,6 +31,8 @@ header {
         }
     }
 }
+
+//  VERSION MOBILE
 
 @media screen and (min-width: 0) and (max-width: 320px) {
     header {

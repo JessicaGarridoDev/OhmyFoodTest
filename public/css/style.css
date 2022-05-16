@@ -544,6 +544,7 @@ main .menuDetail:hover .check-box .fa-check {
   font-size: 20px;
   margin-left: 20px;
 }
+
 @media screen and (min-width: 320px) and (max-width: 765px) {
   .fonctionnement ul {
     flex-direction: column;
